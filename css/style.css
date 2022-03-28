@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: #129689;
+}
+
+.heading {
+  margin-top: 20px;
+  font-size: 50px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+  animation: color 5s infinite linear alternate;
+}
+
+.heading span {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+  animation: color2 5s infinite linear alternate;
+}
+
+@keyframes color {
+  from {
+    color: #ff0000;
+    text-shadow: 0 0 5px rgb(179, 255, 0);
+  }
+  to {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+  }
+}
+
+@keyframes color2 {
+  from {
+    color: #9dff00;
+    text-shadow: 0 0 5px rgb(255, 0, 0);
+  }
+  to {
+    color: #000000;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+  }
+}
+
+.wrapper {
+  width: 350px;
+  height: 200px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgb(11, 199, 105);
+  text-align: center;
+}
+
+.wrapper .colors {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .colors input:first-child {
+  width: 80px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+}
+
+.wrapper .colors input:last-child {
+  width: 100px;
+  height: 30px;
+  margin-left: 15px;
+  padding-left: 5px;
+  background-color: aqua;
+  border: none;
+  font-size: 20px;
+}
+
+.wrapper button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgb(46, 82, 10);
+  color: white;
+  cursor: pointer;
+}
+
+.wrapper button:active {
+  transform: scale(0.9);
+}
+
+.wrapper p {
+  width: 30%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 10px;
+  font-weight: bold;
+  background-color: #000000;
+  color: white;
+  text-shadow: 0px 0px 10px white;
+  opacity: 0;
+}
+
+@media screen and (max-width:400px) {
+  .heading {
+    font-size: 30px;
+  }
+  .wrapper {
+    width: 220px;
+    height: 170px;
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  .wrapper p {
+    padding:3px 5px;
+  }
+}

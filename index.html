@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="./images/android-launchericon-72-72.png">
+  <link rel="apple-touch-icon" href="./images/android-launchericon-96-96.png>
+  <link rel="apple-touch-icon" href="./images/android-launchericon-144-144.png">
+  <link rel="apple-touch-icon" href="./images/android-launchericon-192-192.png">
+  <link rel="apple-touch-icon" href="./images/android-launchericon-512-512.png">
+  <link rel="theme-color" content="#0d1117">
+  <title>Document</title>
+</head>
+<body>
+  <h1 class="heading">Color <span>Picker</span></h1>
+  <div class="wrapper">
+    <div class="colors">
+      <input type="color" id="colorPicker" value="#129689">
+      <input type="text" id="colorText" value="#129689" disabled>
+    </div>
+
+    <div class="buttons">
+      <button onclick="color()">HEX code</button>
+      <button onclick="copy()">Saqlab olish</button>
+    </div>
+
+    <p id="result"></p>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
